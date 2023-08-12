@@ -14,14 +14,11 @@ body {
   color: var(--primary-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-  background: blue;
-  background: radial-gradient(
-    circle farthest-side at center center,
-    #2196f3 2%,
-    // #e507b6 7%,
-    // #fc3232 21%,
-    // #ff3333 41%,
-    #1c0606 75%
+  background: rgb(23, 85, 8);
+  background: linear-gradient(
+    231deg,
+    rgba(23, 85, 8, 1) 0%,
+    rgba(8, 20, 94, 0.9921218487394958) 100%
   );
 }
 

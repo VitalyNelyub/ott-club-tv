@@ -75,13 +75,16 @@
     padding: 0;
     margin: 0 0 53px 0;
   }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .select__field {
   width: 100%;
   padding: 14px;
   border-radius: 5px;
-  background-color: #fc3232;
+  background-color: var(--accent-color);
   font-size: 15px;
   color: var(--primary-text-color);
   cursor: pointer;
@@ -118,7 +121,7 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 66px) / 4);
   }
-   @media screen and (min-width: 990px) {
+  @media screen and (min-width: 990px) {
     width: calc((100% - 90px) / 5);
   }
 }
@@ -153,8 +156,39 @@
 }
 
 .chek__icon {
-  fill: #fc3232;
+  fill: var(--accent-color);
   width: 14px;
   height: 14px;
   margin-left: 8px;
+}
+
+.categories__button-list {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+.category__btn {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color: var(--primary-text-color);
+  }
+}
+
+.category__btn:hover,
+.category__btn:focus {
+  background-color: var(--accent-color);
 }

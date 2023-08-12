@@ -85,10 +85,23 @@
         </div>
         <div class="hero-image__tab">
           <picture>
+             <source
+              srcset="./images/hero-tab-990.png"
+              media="(min-width: 768px)"
+            />
             <img
               src="./images/hero-tab-990.png"
               alt="devices"
               class="devices__img-tab"
+            />
+          </picture>
+        </div>
+        <div class="hero-image__dt">
+          <picture>
+            <img
+              src="./images/hero-dt-1.png"
+              alt="devices"
+              class="devices__img-dt"
             />
           </picture>
         </div>
@@ -101,7 +114,9 @@
             alt="present"
           />
           <p class="articles__title">Бесплатный тест</p>
-          <p class="articles__title-secondary">7 дней бесплатного тестового просмотра</p>
+          <p class="articles__title-secondary">
+            7 дней бесплатного тестового просмотра
+          </p>
         </div>
         <div class="article__item">
           <img
@@ -121,7 +136,9 @@
             alt="present"
           />
           <p class="articles__title">Архив трансляций</p>
-          <p class="articles__title-secondary">Смотрите 7 дней телеэфира в записи</p>
+          <p class="articles__title-secondary">
+            Смотрите 7 дней телеэфира в записи
+          </p>
         </div>
         <div class="article__item">
           <img
@@ -185,7 +202,9 @@
               id="signup-mail"
               placeholder="E-mail"
             />
-            <button class="hero__btn submit__btn" type="submit">Подключить тариф</button>
+            <button class="hero__btn submit__btn" type="submit">
+              Подключить тариф
+            </button>
           </form>
         </div>
       </section>
@@ -212,6 +231,18 @@
                 <option value="category7">Музыкальные</option>
                 <option value="category8">Новостные</option>
               </select>
+            </div>
+            <div class="categories__button-list">
+              <button class="category__btn" type="button">Популярные</button>
+              <button class="category__btn" type="button">Национальные</button>
+              <button class="category__btn" type="button">
+                Познавательные
+              </button>
+              <button class="category__btn" type="button">Кино</button>
+              <button class="category__btn" type="button">Спорт</button>
+              <button class="category__btn" type="button">Детские</button>
+              <button class="category__btn" type="button">Музыкальные</button>
+              <button class="category__btn" type="button">Новостные</button>
             </div>
           </div>
           <div class="chanels__portfolio">
@@ -288,13 +319,26 @@
                 media="(min-width: 768px)"
               />
               <source
-                srcset="./images//devices-tab-990.png"
+                srcset="./images/devices-tab-990.png"
                 media="(min-width: 990px)"
               />
               <img
-                src="./images//devices-tab-990.png"
+                src="./images/devices-tab-990.png"
                 alt="devices"
                 class="advertisement__img-tab"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="./images/devices-tab-1440.png"
+                media="(min-width: 1440px)"
+              />
+              <img
+                src="./images/devices-tab-1440.png"
+                alt="devices"
+                class="advertisement__img-dt"
               />
             </picture>
           </div>

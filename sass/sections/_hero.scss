@@ -1,9 +1,15 @@
 .hero {
+  // background-image: url("../../images/Group-mob.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0 40px 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 0 40px 172px;
   }
 }
 
@@ -13,8 +19,11 @@
     max-width: 430px;
     align-items: flex-start;
   }
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     max-width: 465px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 592px;
   }
 }
 
@@ -41,7 +50,7 @@
     font-size: 32px;
     margin-bottom: 24px;
   }
-   @media screen and (min-width: 990px) {
+  @media screen and (min-width: 990px) {
     font-size: 38px;
     margin-bottom: 24px;
   }
@@ -62,14 +71,14 @@
     font-size: 17px;
     margin-bottom: 34px;
   }
-   @media screen and (min-width: 990px) {
+  @media screen and (min-width: 990px) {
     font-size: 18px;
   }
 }
 
 .hero__btn {
   width: 100%;
-  background-color: #fc3232;
+  background-color: var(--accent-color);
   padding: 14px;
   font-size: 15px;
   color: inherit;
@@ -103,6 +112,16 @@
 .devices__img-tab {
   display: none;
   @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 990px) {
+    display: none;
+  }
+}
+
+.devices__img-dt {
+  display: none;
+  @media screen and (min-width: 990px) {
     display: block;
   }
 }

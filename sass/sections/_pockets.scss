@@ -3,9 +3,24 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 2px solid #fc3232;
+  background-image: url("../../images/frame-mob-1.png");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 12px;
   padding: 20px 0;
+  @media screen and (min-width: 375px) {
+    background-image: url("../../images/frame-mob-2.png");
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url("../../images/frame-tab-1.png");
+  }
+  @media screen and (min-width: 990px) {
+    background-image: url("../../images/frame-tab-2.png");
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url("../../images/frame-dt-1.png");
+  }
 }
 
 .pockets__icon-top {

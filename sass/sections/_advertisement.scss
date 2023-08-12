@@ -1,13 +1,18 @@
 .advertisement {
   padding-bottom: 17px;
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+  }
 }
 
 .advertisement__block {
-  // display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     margin: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0;
   }
 }
 
@@ -21,6 +26,10 @@
   }
   @media screen and (min-width: 990px) {
     width: 485px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 650px;
+    padding: 0 0 0 172px;
   }
 }
 
@@ -41,6 +50,9 @@
   @media screen and (min-width: 990px) {
     font-size: 36px;
   }
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+  }
 }
 
 .advertisement__article {
@@ -50,6 +62,9 @@
   @media screen and (min-width: 375px) {
     font-size: 16px;
     letter-spacing: 0.1px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 100%;
   }
 }
 
@@ -76,11 +91,21 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.advertisement__img-dt {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
 }
 
 .advertisement__btn {
   width: 100%;
-  background-color: #fc3232;
+  background-color: var(--accent-color);
   padding: 14px;
   font-size: 15px;
   color: inherit;

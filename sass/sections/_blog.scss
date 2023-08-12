@@ -72,7 +72,7 @@
   width: 100%;
   background-color: black;
   padding: 10px;
-  border: 1px solid #fc3232;
+  border: 1px solid var(--accent-color);
   border-radius: 5px;
   font-size: 12px;
   line-height: 1.4;
@@ -84,7 +84,7 @@
 }
 
 .close-button {
-  background-color: #fc3232;
+  background-color: var(--accent-color);
   color: var(--primary-text-color);
   border: none;
   padding: 6px;

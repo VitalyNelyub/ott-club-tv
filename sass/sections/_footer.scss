@@ -11,6 +11,10 @@
     display: flex;
     gap: 31px;
   }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 110px;
+  }
 }
 
 .about__list {
@@ -132,7 +136,13 @@
 
 .dev__info {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+  }
 }
 
 .dev__info-text {
