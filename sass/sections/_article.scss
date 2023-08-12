@@ -12,13 +12,22 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  @media screen and (min-width: 990px) {
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 .articles__icon {
   width: 48px;
   height: 48px;
   color: rgba(255, 255, 255, 1);
+  @media screen and (min-width: 990px) {
+    width: 64px;
+    height: 64px;
+  }
 }
+
 
 .articles__title {
   color: rgba(255, 255, 255, 0.9);
@@ -26,4 +35,20 @@
   font-weight: 600;
   line-height: 1.5;
   padding: 0 12px;
+  @media screen and (min-width: 990px) {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.articles__title-secondary {
+  display: none;
+  @media screen and (min-width: 990px) {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
 }

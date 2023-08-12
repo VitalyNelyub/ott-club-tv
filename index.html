@@ -70,7 +70,7 @@
               media="(min-width: 375px)"
             />
             <img
-              src="./images/hero-pic-mob.png"
+              src="./images/hero-tab.png"
               alt="devices"
               class="devices__img"
             />
@@ -85,9 +85,8 @@
         </div>
         <div class="hero-image__tab">
           <picture>
-            <source srcset="./images/hero-tab.png" media="(min-width: 768px)" />
             <img
-              src="./images/hero-tab.png"
+              src="./images/hero-tab-990.png"
               alt="devices"
               class="devices__img-tab"
             />
@@ -102,6 +101,7 @@
             alt="present"
           />
           <p class="articles__title">Бесплатный тест</p>
+          <p class="articles__title-secondary">7 дней бесплатного тестового просмотра</p>
         </div>
         <div class="article__item">
           <img
@@ -110,6 +110,9 @@
             alt="present"
           />
           <p class="articles__title">5 устройств = 1 подписка</p>
+          <p class="articles__title-secondary">
+            Подключайте 5 устройств в одной подписке
+          </p>
         </div>
         <div class="article__item">
           <img
@@ -118,6 +121,7 @@
             alt="present"
           />
           <p class="articles__title">Архив трансляций</p>
+          <p class="articles__title-secondary">Смотрите 7 дней телеэфира в записи</p>
         </div>
         <div class="article__item">
           <img
@@ -126,6 +130,9 @@
             alt="present"
           />
           <p class="articles__title">Без привязки к месту</p>
+          <p class="articles__title-secondary">
+            Смотрите любимые фильмы и передачи в любой точке мира
+          </p>
         </div>
       </section>
       <section class="container pockets__container">
@@ -178,13 +185,13 @@
               id="signup-mail"
               placeholder="E-mail"
             />
-            <button class="hero__btn" type="submit">Подключить тариф</button>
+            <button class="hero__btn submit__btn" type="submit">Подключить тариф</button>
           </form>
         </div>
       </section>
       <section class="container">
         <div class="chanels">
-          <div class="test">
+          <div class="chanels__block">
             <h2 class="chanels__title">ТВ - каналы</h2>
             <picture class="ticets">
               <source srcset="./images/tickets.png" />
@@ -221,6 +228,9 @@
               <li class="chanels__item is__hidden">
                 <img src="./images/TV card film.jpg" alt="Ukraine" />
               </li>
+              <li class="chanels__item is__hidden-tab">
+                <img src="./images/TV card tet.jpg" alt="Ukraine" />
+              </li>
               <li class="chanels__item">
                 <img src="./images/TV card inter.jpg" alt="Inter" />
               </li>
@@ -232,6 +242,9 @@
               </li>
               <li class="chanels__item is__hidden">
                 <img src="./images/TV card m1.jpg" alt="Ukraine" />
+              </li>
+              <li class="chanels__item is__hidden-tab">
+                <img src="./images/TV card 2+2.jpg" alt="Ukraine" />
               </li>
             </ul>
           </div>
@@ -245,7 +258,7 @@
       </section>
       <section class="advertisement">
         <div class="advertisement__block">
-          <div class="container test">
+          <div class="container advertisement__block-tab">
             <h3 class="advertisement__title">Смотрите на разных устройствах</h3>
             <p class="advertisement__article">
               Подключайте подписку FULL и смотрите любимые каналы на 5
@@ -274,8 +287,12 @@
                 srcset="./images/devices-tab2.png"
                 media="(min-width: 768px)"
               />
+              <source
+                srcset="./images//devices-tab-990.png"
+                media="(min-width: 990px)"
+              />
               <img
-                src="./images/devices-tab2.png"
+                src="./images//devices-tab-990.png"
                 alt="devices"
                 class="advertisement__img-tab"
               />

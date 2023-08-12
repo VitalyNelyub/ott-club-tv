@@ -4,6 +4,9 @@
   @media screen and (min-width: 375px) {
     padding-bottom: 16px;
   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 23px;
+  }
 }
 
 .navigation {
@@ -15,6 +18,14 @@
 .navigation__logo {
   width: 56px;
   height: 56px;
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .controls {

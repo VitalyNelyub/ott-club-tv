@@ -11,12 +11,16 @@
   }
 }
 
-.test {
+.advertisement__block-tab {
   @media screen and (min-width: 768px) {
     display: flex;
-    // align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
     width: 455px;
-    padding: 42px 0 32px 40px;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 990px) {
+    width: 485px;
   }
 }
 
@@ -32,6 +36,10 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
+    font-size: 30px;
+  }
+  @media screen and (min-width: 990px) {
+    font-size: 36px;
   }
 }
 
@@ -95,6 +103,10 @@
     flex-direction: row;
     gap: 64px;
     justify-content: center;
+  }
+  @media screen and (min-width: 990px) {
+    gap: 0;
+    justify-content: space-around;
   }
 }
 

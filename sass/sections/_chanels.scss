@@ -1,4 +1,4 @@
-.test {
+.chanels__block {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -23,6 +23,9 @@
     font-size: 30px;
     margin-bottom: 16px;
   }
+  @media screen and (min-width: 990px) {
+    font-size: 36px;
+  }
 }
 
 .ticets {
@@ -35,6 +38,10 @@
     top: -22px;
     left: 180px;
   }
+  @media screen and (min-width: 990px) {
+    top: -25px;
+    left: 220px;
+  }
 }
 
 .chanels__article {
@@ -46,6 +53,11 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 33px;
+    width: 510px;
+  }
+  @media screen and (min-width: 990px) {
+    margin-bottom: 33px;
+    width: 626px;
   }
 }
 
@@ -58,6 +70,10 @@
   @media screen and (min-width: 768px) {
     padding: 0;
     margin: 0 0 41px 0;
+  }
+  @media screen and (min-width: 990px) {
+    padding: 0;
+    margin: 0 0 53px 0;
   }
 }
 
@@ -102,11 +118,21 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 66px) / 4);
   }
+   @media screen and (min-width: 990px) {
+    width: calc((100% - 90px) / 5);
+  }
 }
 
 .is__hidden {
   display: none;
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.is__hidden-tab {
+  display: none;
+  @media screen and (min-width: 990px) {
     display: block;
   }
 }

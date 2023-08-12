@@ -13,6 +13,9 @@
     max-width: 430px;
     align-items: flex-start;
   }
+   @media screen and (min-width: 768px) {
+    max-width: 465px;
+  }
 }
 
 .hero__tab {
@@ -38,6 +41,10 @@
     font-size: 32px;
     margin-bottom: 24px;
   }
+   @media screen and (min-width: 990px) {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
 }
 
 .hero__article {
@@ -54,6 +61,9 @@
     text-align: left;
     font-size: 17px;
     margin-bottom: 34px;
+  }
+   @media screen and (min-width: 990px) {
+    font-size: 18px;
   }
 }
 
@@ -72,6 +82,11 @@
   @media screen and (min-width: 768px) {
     width: 343px;
     padding: 16px 24px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 368px;
+    padding: 16px 28px;
+    font-size: 18px;
   }
 }
 
