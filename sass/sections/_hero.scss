@@ -1,5 +1,27 @@
 .hero {
-//   background-color: blue;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 40px 48px;
+  }
+}
+
+.tab__container {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    max-width: 430px;
+    align-items: flex-start;
+  }
+}
+
+.hero__tab {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 430px;
+  }
 }
 
 .hero__title {
@@ -8,20 +30,64 @@
   font-weight: 600;
   font-style: normal;
   line-height: 1.2;
+  @media screen and (min-width: 375px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 }
 
 .hero__article {
-    font-size: 15px;
-    line-height: 1.4;
-    margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  @media screen and (min-width: 375px) {
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 34px;
+  }
 }
 
 .hero__btn {
-    width: 100%;    
-    background-color: #FC3232;
-    padding: 14px;
-    font-size: 15px;
-    color: inherit;
-    line-height: 1.4;
+  width: 100%;
+  background-color: #fc3232;
+  padding: 14px;
+  font-size: 15px;
+  color: inherit;
+  line-height: 1.4;
+  @media screen and (min-width: 375px) {
+    font-size: 17px;
+    padding: 14px 24px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 343px;
+    padding: 16px 24px;
+  }
 }
 
+.devices__img {
+  @media screen and (min-width: 375px) {
+    width: 100%;
+    padding: 0 18px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.devices__img-tab {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}

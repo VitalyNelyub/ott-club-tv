@@ -1,5 +1,4 @@
-.pockets {
-  //   background-image: url("../../images/Vector.svg");
+.pockets__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +6,35 @@
   border: 2px solid #fc3232;
   border-radius: 12px;
   padding: 20px 0;
+  
+}
+
+.pockets__icon-top {
+  @media screen and (min-width: 768px) {
+    width: 46px;
+    height: 58px;
+  }
+}
+
+.pockets {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+}
+
+.pockets__article {
+  display: flex;
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .price {
@@ -20,15 +48,15 @@
   font-size: 15px;
 }
 
-.pockets__article {
-  font-size: 15px;
-  line-height: 1.4;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
 .pockets__list {
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 .pockets__item {
@@ -56,33 +84,36 @@
   padding: 14px;
   font-size: 15px;
   color: black;
+  @media screen and (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
-.curved-border {
-  width: 200px;
-  height: 100px;
-  position: relative;
-  background-color: #f0f0f0;
-}
+// .curved-border {
+//   width: 200px;
+//   height: 100px;
+//   position: relative;
+//   background-color: #f0f0f0;
+// }
 
-.curved-border::before,
-.curved-border::after {
-  content: "";
-  position: absolute;
-  top: -5px; /* Регулируйте значение для высоты изгиба */
-  width: 100%;
-  height: 10px;
-  background-image: linear-gradient(to right, transparent, black, transparent);
-  background-size: cover;
-  border-radius: 50%;
-}
+// .curved-border::before,
+// .curved-border::after {
+//   content: "";
+//   position: absolute;
+//   top: -5px; /* Регулируйте значение для высоты изгиба */
+//   width: 100%;
+//   height: 10px;
+//   background-image: linear-gradient(to right, transparent, black, transparent);
+//   background-size: cover;
+//   border-radius: 50%;
+// }
 
-.curved-border::before {
-  left: 0;
-  transform: translateX(-50%);
-}
+// .curved-border::before {
+//   left: 0;
+//   transform: translateX(-50%);
+// }
 
-.curved-border::after {
-  right: 0;
-  transform: translateX(50%);
-}
+// .curved-border::after {
+//   right: 0;
+//   transform: translateX(50%);
+// }

@@ -1,5 +1,9 @@
 .header {
   padding-bottom: 8px;
+  width: 100%;
+  @media screen and (min-width: 375px) {
+    padding-bottom: 16px;
+  }
 }
 
 .navigation {
@@ -10,7 +14,37 @@
 
 .navigation__logo {
   width: 56px;
-  height: 50px;
+  height: 56px;
+}
+
+.controls {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 48px;
+}
+
+.socials__list {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.socials__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.socials__icon use {
+  fill: var(--primary-text-color);
 }
 
 .navigation__btn {
@@ -22,4 +56,17 @@
   outline: none;
   border-radius: 5px;
   border: 2px solid #ffffff;
+}
+
+.navigation__btn-signup {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
 }

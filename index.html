@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTT CLUB</title>
+    <link rel="icon" href="./images/Logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,41 +27,120 @@
           <a href="./index.html">
             <img class="navigation__logo" src="./images/Logo.png" alt="logo" />
           </a>
-          <button class="navigation__btn">Войти</button>
+          <div class="controls">
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook-with-circle"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <button class="navigation__btn-signup">Регистрация</button>
+            </div>
+            <button class="navigation__btn">Войти</button>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
+        <div class="hero__tab">
+          <div class="container tab__container">
+            <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
+          </div>
+          <picture>
+            <source
+              srcset="./images/hero-pic-mob.png"
+              media="(min-width: 320px)"
+            />
+            <source
+              srcset="./images/header-mob-2.png"
+              media="(min-width: 375px)"
+            />
+            <img
+              src="./images/hero-pic-mob.png"
+              alt="devices"
+              class="devices__img"
+            />
+          </picture>
+          <div class="container tab__container">
+            <p class="hero__article">
+              Национальные, познавательные, детские, кино, спортивные, новостные
+              и многие другие каналы
+            </p>
+            <button class="hero__btn">Протестировать 7 дней бесплатно</button>
+          </div>
         </div>
-        <picture>
-          <source
-            srcset="./images/hero-pic-mob.png"
-            media="(min-width: 480px)"
-          />
-          <img src="./images/hero-pic-mob.png" alt="devices" />
-        </picture>
-        <div class="container">
-          <p class="hero__article">
-            Национальные, познавательные, детские, кино, спортивные, новостные и
-            многие другие каналы
-          </p>
-          <button class="hero__btn">Протестировать 7 дней бесплатно</button>
+        <div class="hero-image__tab">
+          <picture>
+            <source srcset="./images/hero-tab.png" media="(min-width: 768px)" />
+            <img
+              src="./images/hero-tab.png"
+              alt="devices"
+              class="devices__img-tab"
+            />
+          </picture>
         </div>
       </section>
-      <section class="container">
+      <section class="article container">
+        <div class="article__item">
+          <img
+            class="articles__icon"
+            src="./images/svg/gift.svg"
+            alt="present"
+          />
+          <p class="articles__title">Бесплатный тест</p>
+        </div>
+        <div class="article__item">
+          <img
+            class="articles__icon"
+            src="./images/svg/devices.svg"
+            alt="present"
+          />
+          <p class="articles__title">5 устройств = 1 подписка</p>
+        </div>
+        <div class="article__item">
+          <img
+            class="articles__icon"
+            src="./images/svg/radio.svg"
+            alt="present"
+          />
+          <p class="articles__title">Архив трансляций</p>
+        </div>
+        <div class="article__item">
+          <img
+            class="articles__icon"
+            src="./images/svg/earth.svg"
+            alt="present"
+          />
+          <p class="articles__title">Без привязки к месту</p>
+        </div>
+      </section>
+      <section class="container pockets__container">
+        <img class="pockets__icon-top" src="./images/eye.png" alt="eye" />
         <div class="pockets">
-          <img src="./images/eye.png" alt="eye" />
-          <span>
-            <span class="price">1&euro;</span>
-            <p class="money">/МЕСЯЦ</p>
-            <p class="pockets__article">
-              Покупая подписку <br />
-              более, чем на 6 месяцев
-            </p>
-          </span>
+          <div class="pockets__article">
+            <span>
+              <span class="price">1&euro;</span>
+              <p class="money">/МЕСЯЦ</p>
+              <p class="pockets__article">
+                Покупая подписку <br />
+                более, чем на 6 месяцев
+              </p>
+            </span>
+          </div>
           <ul class="pockets__list">
             <li class="pockets__item">
               <svg class="pockets__icon">
@@ -88,42 +168,44 @@
               >5 устройств = 1подписка
             </li>
           </ul>
-          <div class="submit">
-            <form class="submit__form">
-              <input
-                class="mail__box"
-                type="email"
-                name="email"
-                id="signup-mail"
-                placeholder="E-mail"
-              />
-              <button class="hero__btn" type="submit">Подключить тариф</button>
-            </form>
-          </div>
+        </div>
+        <div class="submit">
+          <form class="submit__form">
+            <input
+              class="mail__box"
+              type="email"
+              name="email"
+              id="signup-mail"
+              placeholder="E-mail"
+            />
+            <button class="hero__btn" type="submit">Подключить тариф</button>
+          </form>
         </div>
       </section>
       <section class="container">
         <div class="chanels">
-          <h2 class="chanels__title">ТВ - каналы</h2>
-          <picture class="ticets">
-            <source srcset="./images/tickets.png" />
-            <img src="./images/tickets.png" alt="" />
-          </picture>
-          <p class="chanels__article">
-            Национальные, познавательные, детские, кино, спортивные, новостные и
-            многие другие телеканалы
-          </p>
-          <div class="category-select container">
-            <select class="select__field" id="category">
-              <option value="category1">Популярные</option>
-              <option value="category2">Национальные</option>
-              <option value="category3">Познавательные</option>
-              <option value="category4">Кино</option>
-              <option value="category5">Спорт</option>
-              <option value="category6">Детские</option>
-              <option value="category7">Музыкальные</option>
-              <option value="category8">Новостные</option>
-            </select>
+          <div class="test">
+            <h2 class="chanels__title">ТВ - каналы</h2>
+            <picture class="ticets">
+              <source srcset="./images/tickets.png" />
+              <img src="./images/tickets.png" alt="tickets" />
+            </picture>
+            <p class="chanels__article">
+              Национальные, познавательные, детские, кино, спортивные, новостные
+              и многие другие телеканалы
+            </p>
+            <div class="category-select container">
+              <select class="select__field" id="category">
+                <option value="category1">Популярные</option>
+                <option value="category2">Национальные</option>
+                <option value="category3">Познавательные</option>
+                <option value="category4">Кино</option>
+                <option value="category5">Спорт</option>
+                <option value="category6">Детские</option>
+                <option value="category7">Музыкальные</option>
+                <option value="category8">Новостные</option>
+              </select>
+            </div>
           </div>
           <div class="chanels__portfolio">
             <ul class="chanels__list">
@@ -136,6 +218,9 @@
               <li class="chanels__item">
                 <img src="./images/TV card ukraine.jpg" alt="Ukraine" />
               </li>
+              <li class="chanels__item is__hidden">
+                <img src="./images/TV card film.jpg" alt="Ukraine" />
+              </li>
               <li class="chanels__item">
                 <img src="./images/TV card inter.jpg" alt="Inter" />
               </li>
@@ -144,6 +229,9 @@
               </li>
               <li class="chanels__item">
                 <img src="./images/TV card ictv.jpg" alt="ICTV" />
+              </li>
+              <li class="chanels__item is__hidden">
+                <img src="./images/TV card m1.jpg" alt="Ukraine" />
               </li>
             </ul>
           </div>
@@ -156,21 +244,44 @@
         </div>
       </section>
       <section class="advertisement">
-        <div class="container">
-          <h3 class="advertisement__title">Смотрите на разных устройствах</h3>
-          <p class="advertisement__article">
-            Подключайте подписку FULL и смотрите любимые каналы на 5
-            устройствах, среди которых: телевизор, компьютер, планшет или
-            смартфон
-          </p>
+        <div class="advertisement__block">
+          <div class="container test">
+            <h3 class="advertisement__title">Смотрите на разных устройствах</h3>
+            <p class="advertisement__article">
+              Подключайте подписку FULL и смотрите любимые каналы на 5
+              устройствах, среди которых: телевизор, компьютер, планшет или
+              смартфон
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="./images/advertisement-mob.png"
+              media="(min-width: 320px)"
+            />
+            <source
+              srcset="./images/advertisement-mob-2.png"
+              media="(min-width: 375px)"
+            />
+            <img
+              src="./images/advertisement-mob.png"
+              alt="devices"
+              class="advertisement__img"
+            />
+          </picture>
+          <div>
+            <picture>
+              <source
+                srcset="./images/devices-tab2.png"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./images/devices-tab2.png"
+                alt="devices"
+                class="advertisement__img-tab"
+              />
+            </picture>
+          </div>
         </div>
-        <picture>
-          <source
-            srcset="./images/advertisement-mob.png"
-            media="(min-width: 480px)"
-          />
-          <img src="./images/advertisement-mob.png" alt="devices" />
-        </picture>
         <div class="container container-advertisement">
           <button class="advertisement__btn">
             Протестировать 7 дней бесплатно
@@ -181,12 +292,28 @@
             <picture>
               <source
                 srcset="./images/Samsung.png"
-                media="(min-width: 480px)"
+                media="(min-width: 320px)"
+              />
+              <source
+                srcset="./images/samsung-mob-2.png"
+                media="(min-width: 375px)"
+              />
+              <source
+                srcset="./images/samsung-tab2.png"
+                media="(min-width: 768px)"
               />
               <img src="./images/Samsung.png" alt="devices" />
             </picture>
             <picture>
-              <source srcset="./images/IOS.png" media="(min-width: 480px)" />
+              <source srcset="./images/IOS.png" media="(min-width: 320px)" />
+              <source
+                srcset="./images/ios-mob-2.png"
+                media="(min-width: 375px)"
+              />
+              <source
+                srcset="./images/ios-tab2.png"
+                media="(min-width: 768px)"
+              />
               <img src="./images/IOS.png" alt="devices" />
             </picture>
           </div>
@@ -194,18 +321,35 @@
             <picture>
               <source
                 srcset="./images/Android TV.png"
-                media="(min-width: 480px)"
+                media="(min-width: 320px)"
+              />
+              <source
+                srcset="./images/android-mob-2.png"
+                media="(min-width: 375px)"
+              />
+              <source
+                srcset="./images/android-tab2.png"
+                media="(min-width: 768px)"
               />
               <img src="./images/Android TV.png" alt="devices" />
             </picture>
             <picture>
-              <source srcset="./images/LG.png" media="(min-width: 480px)" />
+              <source srcset="./images/LG.png" media="(min-width: 320px)" />
+              <source
+                srcset="./images/lg-mob-2.png"
+                media="(min-width: 375px)"
+              />
+              <source
+                srcset="./images/lg-tab2.png"
+                media="(min-width: 768px)"
+              />
               <img src="./images/LG.png" alt="devices" />
             </picture>
           </div>
         </div>
       </section>
       <section>
+        <h3 class="blog__title container">Популярные вопросы</h3>
         <div class="blog container">
           <div class="dropdown-text">
             <span class="dropdown-text__trigger"
@@ -329,6 +473,164 @@
           </div>
         </div>
       </section>
+      <footer class="container">
+        <div class="footer__contant">
+          <div class="about">
+            <ul class="about__list">
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >О нас</a
+                >
+              </li>
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >ТВ-Каналам</a
+                >
+              </li>
+            </ul>
+            <ul class="about__list">
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Проверка скорости</a
+                >
+              </li>
+              <li class="about__item">
+                <a
+                  class="about__link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Правила оформления подписки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <address>
+            <div class="address__tab">
+              <h3 class="address__title">Помощь</h3>
+              <div class="address__info">
+                <ul class="address__list">
+                  <li class="addres__item">
+                    <a class="addres__link" href="tel:+442045772169"
+                      >+442045772169 (Англия)</a
+                    >
+                  </li>
+                  <li class="addres__item">
+                    <a class="addres__link" href="tel:+420255708953"
+                      >+420255708953 (Европа)</a
+                    >
+                  </li>
+                  <li class="addres__item">
+                    <a class="addres__link" href="tel:+97233751723"
+                      >+97233751723 (Израиль)</a
+                    >
+                  </li>
+                  <li class="addres__item">
+                    <a class="addres__link" href="mailto:support@ottclub.cc"
+                      >support@ottclub.cc</a
+                    >
+                  </li>
+                </ul>
+                <ul class="address__list"></ul>
+                <div class="chat">
+                  <h3 class="chat__title">Чат-поддержка</h3>
+                  <ul class="chat__list">
+                    <li class="chat__item">
+                      <a
+                        class="chat__link"
+                        href="https://api.whatsapp.com/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <img
+                          src="./images/whatsapp.png"
+                          alt="icon"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </li>
+                    <li class="chat__item">
+                      <a
+                        class="chat__link"
+                        href="https://t.me/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        ><img
+                          src="./images/telegram.png"
+                          alt="icon"
+                          width="40"
+                          height="40"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </address>
+        </div>
+        <div class="pay__variants">
+          <img
+            src="./images/logos_visa.png"
+            alt="icon"
+            class="pay__variants-icon"
+          />
+          <img
+            src="./images/master card.png"
+            alt="icon"
+            class="pay__variants-icon"
+          />
+          <img
+            src="./images/free-kassa.png"
+            alt="icon"
+            class="pay__variants-icon"
+          />
+          <img
+            src="./images/pay-sera.png"
+            alt="icon"
+            class="pay__variants-icon"
+          />
+          <img
+            src="./images/sepa-logo.png"
+            alt="icon"
+            class="pay__variants-icon"
+          />
+        </div>
+        <div class="dev__info">
+          <p class="dev__info-text">&copy;2021-2022 COMPANY NAME LTD</p>
+          <p class="dev__info-text">Company number 1221514</p>
+        </div>
+      </footer>
     </main>
     <script src="./JS/accordion.js"></script>
   </body>
