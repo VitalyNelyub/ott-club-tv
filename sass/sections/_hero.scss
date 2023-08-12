@@ -1,0 +1,27 @@
+.hero {
+//   background-color: blue;
+}
+
+.hero__title {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.hero__article {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.hero__btn {
+    width: 100%;    
+    background-color: #FC3232;
+    padding: 14px;
+    font-size: 15px;
+    color: inherit;
+    line-height: 1.4;
+}
+

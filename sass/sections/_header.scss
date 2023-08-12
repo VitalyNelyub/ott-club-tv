@@ -1,0 +1,25 @@
+.header {
+  padding-bottom: 8px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo {
+  width: 56px;
+  height: 50px;
+}
+
+.navigation__btn {
+  padding: 9px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+}

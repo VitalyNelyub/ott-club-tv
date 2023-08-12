@@ -1,0 +1,88 @@
+.pockets {
+  //   background-image: url("../../images/Vector.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #fc3232;
+  border-radius: 12px;
+  padding: 20px 0;
+}
+
+.price {
+  color: red;
+  font-size: 52px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.money {
+  font-size: 15px;
+}
+
+.pockets__article {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.pockets__list {
+  margin-bottom: 24px;
+}
+
+.pockets__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pockets__icon {
+  width: 20px;
+  height: 20px;
+  fill: yellow;
+}
+
+.submit__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.mail__box {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  color: black;
+}
+
+.curved-border {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.curved-border::before,
+.curved-border::after {
+  content: "";
+  position: absolute;
+  top: -5px; /* Регулируйте значение для высоты изгиба */
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(to right, transparent, black, transparent);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.curved-border::before {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.curved-border::after {
+  right: 0;
+  transform: translateX(50%);
+}
