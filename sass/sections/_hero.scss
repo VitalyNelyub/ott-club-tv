@@ -1,7 +1,4 @@
 .hero {
-  // background-image: url("../../images/Group-mob.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -83,6 +80,8 @@
   font-size: 15px;
   color: inherit;
   line-height: 1.4;
+  border: 1px solid var(--accent-color);
+  transition: all var(--transition-time);
   @media screen and (min-width: 375px) {
     font-size: 17px;
     padding: 14px 24px;
@@ -97,6 +96,12 @@
     padding: 16px 28px;
     font-size: 18px;
   }
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: transparent;
+  color: var(--accent-color);
 }
 
 .devices__img {

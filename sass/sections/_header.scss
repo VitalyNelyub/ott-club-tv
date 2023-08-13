@@ -39,6 +39,15 @@
   gap: 48px;
 }
 
+.socials__item {
+   transition: all var(--transition-time);
+}
+
+.socials__item:hover,
+.socials__item:focus {
+transform: scale(1.2);
+}
+
 .socials__list {
   @media screen and (max-width: 768px) {
     display: none;
@@ -67,6 +76,13 @@
   outline: none;
   border-radius: 5px;
   border: 2px solid #ffffff;
+  transition: all var(--transition-time);
+}
+
+.navigation__btn:hover,
+.navigation__btn:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .navigation__btn-signup {
@@ -79,5 +95,11 @@
     background: transparent;
     outline: none;
     border: none;
+    transition: all var(--transition-time);
   }
+}
+
+.navigation__btn-signup:hover,
+.navigation__btn-signup:focus {
+  color: var(--accent-color);
 }

@@ -56,12 +56,18 @@
   cursor: pointer;
   text-align: left;
   width: 228px;
+  transition: all var(--transition-time);
   @media screen and (min-width: 375px) {
     width: 100%;
   }
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
+}
+
+.dropdown-text__trigger:hover,
+.dropdown-text__trigger:focus {
+  color: var(--accent-color);
 }
 
 .dropdown-text__content {
@@ -89,4 +95,12 @@
   border: none;
   padding: 6px;
   margin: 20px auto 0;
+  border: 1px solid var(--accent-color);
+  transition: all var(--transition-time);
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: transparent;
+  color: var(--accent-color);
 }

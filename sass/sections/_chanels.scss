@@ -88,12 +88,18 @@
   font-size: 15px;
   color: var(--primary-text-color);
   cursor: pointer;
+  transition: all var(--transition-time);
   @media screen and (min-width: 768px) {
     width: 300px;
     text-align: left;
     display: block;
     font-size: 16px;
   }
+}
+
+.select__field:hover,
+.select__field:focus {
+  transform: scale(1.1);
 }
 
 .chanels__list {

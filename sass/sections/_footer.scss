@@ -37,6 +37,12 @@
   line-height: 1.4;
   letter-spacing: normal;
   opacity: 0.8;
+  transition: all var(--transition-time);
+}
+
+.about__link:hover,
+.about__link:focus {
+  color: var(--accent-color);
 }
 
 .address__info {
@@ -96,6 +102,12 @@
   font-style: normal;
   line-height: 1.4;
   opacity: 0.8;
+  transition: all var(--transition-time);
+}
+
+.addres__link:hover,
+.addres__link:focus {
+  color: var(--accent-color);
 }
 
 .chat__title {
@@ -120,6 +132,15 @@
     display: flex;
     justify-content: flex-start;
   }
+}
+
+.chat__item {
+  transition: all var(--transition-time);
+}
+
+.chat__item:hover,
+.chat__itemk:focus {
+  transform: scale(1.2);
 }
 
 .pay__variants {
