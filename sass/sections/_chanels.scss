@@ -1,4 +1,5 @@
 .chanels__block {
+  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -7,8 +8,9 @@
 }
 
 .chanels {
-  position: relative;
-  margin-top: 26px;
+  background-image: url("../images/web.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .chanels__title {
@@ -30,7 +32,7 @@
 
 .ticets {
   position: absolute;
-  top: -28px;
+  top: -25px;
   @media screen and (min-width: 375px) {
     top: -22px;
   }

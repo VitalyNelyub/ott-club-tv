@@ -1,5 +1,7 @@
 .hero {
-  // margin-bottom: 36px;
+  background-image: url('../images/fly.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;

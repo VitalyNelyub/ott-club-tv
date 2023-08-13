@@ -276,6 +276,11 @@ li {
   color: var(--accent-color);
 }
 
+.hero {
+  background-image: url("../images/fly.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @media screen and (min-width: 768px) {
   .hero {
     display: -webkit-box;
@@ -758,6 +763,9 @@ li {
   color: var(--accent-color);
 }
 
+.chanels__block {
+  position: relative;
+}
 @media screen and (min-width: 768px) {
   .chanels__block {
     display: -webkit-box;
@@ -772,8 +780,9 @@ li {
 }
 
 .chanels {
-  position: relative;
-  margin-top: 26px;
+  background-image: url("../images/web.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .chanels__title {
@@ -801,7 +810,7 @@ li {
 
 .ticets {
   position: absolute;
-  top: -28px;
+  top: -25px;
 }
 @media screen and (min-width: 375px) {
   .ticets {
@@ -1389,6 +1398,14 @@ li {
 .close-button:focus {
   background-color: transparent;
   color: var(--accent-color);
+}
+
+.footer {
+  background-image: url("../images/bg-pic-footer.png");
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
