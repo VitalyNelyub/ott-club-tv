@@ -546,7 +546,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-image: url("../../images/frame-mob-1.png");
+  background-image: url("../images/frame-mob-1.png");
   background-size: 90% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -555,7 +555,7 @@ li {
 }
 @media screen and (min-width: 375px) {
   .pockets__container {
-    background-image: url("../../images/frame-mob-2.png");
+    background-image: url("../images/frame-mob-2.png");
   }
 }
 @media screen and (min-width: 768px) {
