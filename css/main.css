@@ -721,13 +721,18 @@ li {
 }
 
 .submit__btn {
-  margin-bottom: 0;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 0;
-  -webkit-transition: all var(--transition-time);
-  transition: all var(--transition-time);
+  border-radius: 5px;
+}
+@media screen and (min-width: 990px) {
+  .submit__btn {
+    margin-bottom: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    -webkit-transition: all var(--transition-time);
+    transition: all var(--transition-time);
+  }
 }
 
 .submit__btn:hover,
