@@ -1,9 +1,15 @@
 .footer {
-  background-image: url('../images/bg-pic-footer.png');
+  background-image: url("../images/footer-mob.png");
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/footer-tab.png");
+  }
+  @media screen and (min-width: 990px) {
+    background-image: url("../images/footer-dt.png");
+  }
 }
 
 .footer__contant {
