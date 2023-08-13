@@ -560,17 +560,17 @@ li {
 }
 @media screen and (min-width: 768px) {
   .pockets__container {
-    background-image: url("../../images/frame-tab-1.png");
+    background-image: url("../images/frame-tab-1.png");
   }
 }
 @media screen and (min-width: 990px) {
   .pockets__container {
-    background-image: url("../../images/frame-tab-2.png");
+    background-image: url("../images/frame-tab-2.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .pockets__container {
-    background-image: url("../../images/frame-dt-1.png");
+    background-image: url("../images/frame-dt-1.png");
   }
 }
 
